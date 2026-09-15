@@ -6,7 +6,7 @@ Use this as a planning checklist. Create one GitHub issue per small deliverable;
 
 ## Repository foundation / 仓库基础
 
-- [ ] Choose and document a license / 选择并记录许可证
+- [x] Choose and document a license / 选择并记录许可证
 - [ ] Record language/runtime choice in an ADR / 用 ADR 记录语言与运行时选择
 - [ ] Define local setup without committing secrets / 定义本地设置且不提交密钥
 - [ ] Define contribution and branch rules / 定义贡献与分支规则

@@ -64,6 +64,12 @@ Documentation and empty scaffolding only. No runtime, dependency, framework, or 
 
 ## Contributing / 参与方式
 
-See [CONTRIBUTING.md](CONTRIBUTING.md). This repository intentionally has no license yet; choose one before accepting outside contributions.
+See [CONTRIBUTING.md](CONTRIBUTING.md). Contributions are accepted under the repository's MIT License.
 
-参见 [CONTRIBUTING.md](CONTRIBUTING.md)。仓库暂未选择开源许可证；接受外部贡献前请先确定许可证。
+参见 [CONTRIBUTING.md](CONTRIBUTING.md)。贡献内容采用本仓库的 MIT 许可证。
+
+## License / 许可证
+
+TripPilot is released under the [MIT License](LICENSE).
+
+TripPilot 基于 [MIT 许可证](LICENSE)发布。
