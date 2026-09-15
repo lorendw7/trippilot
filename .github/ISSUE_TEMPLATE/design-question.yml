@@ -1,0 +1,36 @@
+name: "Design question / 设计问题"
+description: "Explore a trade-off before implementation / 实现前探索设计取舍"
+title: "[Design] "
+labels: ["design"]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: "Context / 背景"
+      description: "What decision is needed, and why now? / 需要决定什么，为什么是现在？"
+    validations:
+      required: true
+  - type: textarea
+    id: constraints
+    attributes:
+      label: "Constraints / 约束"
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: "Options and evidence / 方案与证据"
+      description: "Compare at least two options when practical / 可行时至少比较两个方案"
+    validations:
+      required: true
+  - type: textarea
+    id: experiment
+    attributes:
+      label: "Smallest useful experiment / 最小有效实验"
+  - type: checkboxes
+    id: adr
+    attributes:
+      label: "Decision record / 决策记录"
+      options:
+        - label: "I will add an ADR if this changes an architectural boundary / 若改变架构边界，我会补充 ADR"
+          required: true

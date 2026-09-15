@@ -1,0 +1,41 @@
+name: "Problem report / 问题报告"
+description: "Report incorrect, unsafe, or unexpected behavior / 报告错误、不安全或异常行为"
+title: "[Problem] "
+labels: ["problem"]
+body:
+  - type: textarea
+    id: observed
+    attributes:
+      label: "Observed behavior / 实际行为"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Expected behavior / 预期行为"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: "Minimal reproduction / 最小复现步骤"
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: "Safe evidence / 安全证据"
+      description: "Remove API keys and personal travel data / 请移除 API 密钥和私人行程数据"
+  - type: dropdown
+    id: impact
+    attributes:
+      label: "Impact / 影响"
+      options:
+        - "Incorrect information / 信息错误"
+        - "Missing or stale source / 来源缺失或过期"
+        - "Tool failure / 工具失败"
+        - "Privacy or security / 隐私或安全"
+        - "Usability / 可用性"
+        - "Other / 其他"
+    validations:
+      required: true

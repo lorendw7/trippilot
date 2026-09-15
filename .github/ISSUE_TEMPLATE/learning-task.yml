@@ -1,0 +1,58 @@
+name: "Learning task / 学习任务"
+description: "Plan one small, verifiable learning milestone / 规划一个可验证的小型学习里程碑"
+title: "[Learn] "
+labels: ["learning"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Keep the scope small. The learner writes all application code.
+        请保持范围精简，全部应用代码由学习者编写。
+  - type: dropdown
+    id: phase
+    attributes:
+      label: "Roadmap phase / 学习阶段"
+      options:
+        - "0 — Problem framing / 问题定义"
+        - "1 — Minimal LLM call / 最小模型调用"
+        - "2 — RAG"
+        - "3 — Tool calling / 工具调用"
+        - "4 — Agent loop"
+        - "5 — MCP"
+        - "6 — Skills"
+        - "7 — Evaluation and safety / 评测与安全"
+        - "8 — Product polish / 产品化"
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: "Learning question / 学习问题"
+      description: "What should you understand after this task? / 完成后你应该理解什么？"
+    validations:
+      required: true
+  - type: textarea
+    id: deliverable
+    attributes:
+      label: "Small deliverable / 最小交付物"
+      description: "Describe the smallest artifact you will create yourself / 描述你将亲手完成的最小成果"
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: "Acceptance criteria / 验收标准"
+      placeholder: "- [ ] Observable result / 可观察结果\n- [ ] Failure case / 失败场景\n- [ ] Explanation in my own words / 用自己的话解释"
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: "Risks and unknowns / 风险与未知"
+  - type: checkboxes
+    id: teaching
+    attributes:
+      label: "Teaching-mode check / 教学模式确认"
+      options:
+        - label: "I will write and explain the application code myself / 我将亲自编写并解释应用代码"
+          required: true
