@@ -12,9 +12,12 @@ TripPilot is a documentation-first learning repository. You will build a travel-
 
 TripPilot 是一个文档优先的学习仓库。你将亲手构建一个旅行策划 Agent：理解约束、检索可信资料、调用外部工具，并生成可解释的行程。
 
-This initial repository deliberately contains **no application implementation**. The learner writes every line of product code. Documentation, milestones, review questions, templates, and empty directories provide the learning path.
+The repository now contains the Phase 0 domain contracts, but no LLM, retrieval, tool, Agent,
+or user-interface implementation. The learner builds those milestones incrementally while the
+documentation, review questions, and tests provide the learning path.
 
-初始仓库刻意**不包含任何应用实现**。所有产品代码都由学习者编写；仓库只提供文档、里程碑、复盘问题、模板与空目录。
+仓库目前包含阶段 0 的领域契约，但尚未实现 LLM、检索、工具、Agent 或用户界面。学习者将
+逐步完成这些里程碑，文档、复盘问题和测试用于提供学习路径。
 
 ## Learning goals / 学习目标
 
@@ -41,6 +44,7 @@ packages/             Future reusable modules / 未来的可复用模块
 data/                 Local sample data only / 仅存放本地样例数据
 examples/             Future learning examples / 未来的学习示例
 tests/                Future evaluation and tests / 未来的评测与测试
+src/trippilot/         Validated domain contracts / 已校验的领域契约
 docs/                 Bilingual learning documentation / 双语学习文档
 .github/               Issue and pull-request templates / Issue 与 PR 模板
 ```
@@ -58,9 +62,30 @@ The empty folders are boundaries, not required technology choices. Rename or rem
 
 ## Status / 当前状态
 
-Documentation and empty scaffolding only. No runtime, dependency, framework, or provider has been selected.
+Phase 0 is in progress. Python 3.13, uv, and Pydantic v2 are selected; model, retrieval, UI,
+and deployment providers remain intentionally open.
 
-当前仅包含文档与空脚手架，尚未选择运行时、依赖、框架或模型供应商。
+阶段 0 正在进行。已选择 Python 3.13、uv 和 Pydantic v2；模型、检索、UI 与部署供应商仍
+有意保持开放。
+
+## Local setup / 本地配置
+
+Prerequisite: install [uv](https://docs.astral.sh/uv/). Then run:
+
+前置条件：安装 [uv](https://docs.astral.sh/uv/)，然后运行：
+
+```powershell
+uv sync
+uv run ruff check .
+uv run mypy
+uv run pytest
+```
+
+`uv sync` creates the ignored `.venv` directory and installs the exact versions in `uv.lock`.
+Copy `.env.example` to `.env` only when local configuration is needed; never commit real secrets.
+
+`uv sync` 会创建已忽略的 `.venv` 目录，并安装 `uv.lock` 中锁定的准确版本。仅在需要本地
+配置时将 `.env.example` 复制为 `.env`，且绝不要提交真实密钥。
 
 ## Contributing / 参与方式
 

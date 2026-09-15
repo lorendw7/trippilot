@@ -2,9 +2,12 @@
 
 ## Status / 状态
 
-This is a target learning architecture, not an implementation contract. Technology and provider choices remain open and should be recorded as ADRs.
+This is a target learning architecture, not an implementation contract. Python 3.13 and the
+core domain contracts are selected in ADR-0001; provider and application-framework choices
+remain open and should be recorded in later ADRs.
 
-这是用于学习的目标架构，不是实现合同。技术栈与服务商尚未确定，关键选择应通过 ADR 记录。
+这是用于学习的目标架构，不是实现合同。Python 3.13 与核心领域契约已在 ADR-0001 中确定；
+供应商和应用框架仍保持开放，后续关键选择应通过 ADR 记录。
 
 ## Principles / 原则
 
@@ -55,7 +58,8 @@ flowchart LR
 
 ## Core domain objects / 核心领域对象
 
-Define these contracts before choosing a framework:
+The Phase 0 implementation defines these provider-independent contracts before choosing an
+application framework:
 
 - `TripRequest`: destination, dates, travelers, budget, interests, pace, accessibility, exclusions / 旅行请求。
 - `Evidence`: claim, source, retrieved time, freshness, confidence / 证据。
@@ -63,9 +67,11 @@ Define these contracts before choosing a framework:
 - `ItineraryItem`: time window, place, rationale, estimated cost, evidence, alternatives / 行程项。
 - `TripPlan`: assumptions, days, budget summary, warnings, unresolved questions / 行程计划。
 
-The names are conceptual. The learner selects the actual schema and language.
+These executable schemas live in `src/trippilot/domain/models.py` and are summarized in
+[`data-contracts.md`](data-contracts.md).
 
-以上名称仅表示概念，具体结构与编程语言由学习者选择。
+阶段 0 在选择应用框架之前实现了这些与供应商无关的契约。可执行结构位于
+`src/trippilot/domain/models.py`，摘要见 [`data-contracts.md`](data-contracts.md)。
 
 ## Security and safety questions / 安全问题
 

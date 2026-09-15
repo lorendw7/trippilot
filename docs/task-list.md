@@ -7,14 +7,14 @@ Use this as a planning checklist. Create one GitHub issue per small deliverable;
 ## Repository foundation / 仓库基础
 
 - [x] Choose and document a license / 选择并记录许可证
-- [ ] Record language/runtime choice in an ADR / 用 ADR 记录语言与运行时选择
-- [ ] Define local setup without committing secrets / 定义本地设置且不提交密钥
-- [ ] Define contribution and branch rules / 定义贡献与分支规则
+- [x] Record language/runtime choice in an ADR / 用 ADR 记录语言与运行时选择
+- [x] Define local setup without committing secrets / 定义本地设置且不提交密钥
+- [x] Define contribution and branch rules / 定义贡献与分支规则
 
 ## Product contract / 产品契约
 
-- [ ] Write three representative user scenarios / 编写三个代表性用户场景
-- [ ] Define input and output schemas / 定义输入与输出结构
+- [x] Write three representative user scenarios / 编写三个代表性用户场景
+- [x] Define input and output schemas / 定义输入与输出结构
 - [ ] Define freshness and citation rules / 定义时效与引用规则
 - [ ] Define human-confirmation boundaries / 定义人工确认边界
 

@@ -7,6 +7,8 @@ The canonical documents below are bilingual. Language-specific landing pages pro
 - [中文入口](zh-CN/README.md)
 - [English entry](en/README.md)
 - [Project brief / 项目说明](project-brief.md)
+- [Phase 0 requirements / 阶段 0 需求](requirements.md)
+- [Core data contracts / 核心数据契约](data-contracts.md)
 - [Architecture / 架构说明](architecture.md)
 - [Learning roadmap / 学习路线](learning-roadmap.md)
 - [Task list / 任务清单](task-list.md)

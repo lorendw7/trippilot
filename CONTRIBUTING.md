@@ -27,4 +27,8 @@ Do not merge generated application code that the learner cannot explain. Documen
 
 ## Commit suggestions / 提交建议
 
-Use clear prefixes such as `docs:`, `chore:`, `feat:`, `test:`, and `fix:`. The initial repository contains no application code; the learner decides when the first `feat:` commit is ready.
+Use clear prefixes such as `docs:`, `chore:`, `feat:`, `test:`, and `fix:`. Keep each commit
+focused on one explainable learning outcome.
+
+使用 `docs:`、`chore:`、`feat:`、`test:`、`fix:` 等清晰前缀。每个提交只聚焦一个可解释、
+可验证的学习成果。
